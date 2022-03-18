@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name ="description" content="this the the test to course">
+		<link rel="stylesheet"href="log_in.css"/>
+		<title> log in </title>
+	</head>
+	<body>
+    <div>
+        <center>  <img src="MATRIALS/MOM2.png" alt="logo" width="230" height="150"> </center>
+      <h1>log in</h1>
+      <form>
+      <label class="usernamel">Username</label>
+      <input class="username" type="text"maxlength="15"id="username" placeholder="  Enter Username.." autocomplete= required><br>
+      <!-- <div id="text1" class="text1"></div> -->
+      <label class="passwordl">Password</label>
+      <input class="password" type="password"maxlength="20"id="password" placeholder="  Enter Password.." autocomplete= required><br>
+      <!-- <div id="text2" class="text1"></div> -->
+      <!--  <input type="button"id="submet" value="submet" onclick="validate()">  -->
+      <input class="log_in" type="submit" id="submet" value="log in" onclick="validate()">
+      <input class="sign_up" type="button" name="" value="sign up" onclick="sign_up()"> <!-- code need to be completeed -->
+    </div>
+    <footer>
+	<hr>
+      <ul>
+        <li class="first_list"><a href="#">About Us</a></li>
+        <li><a href="#">Devolpers &amp Editors</a></li>
+        <li><a href="#">Help</a></li>
+        <li class="home_footer"> <a href="C:\Users\Mazin Mohammed\Desktop\Online Market Shop/home2.html">Home</a>
+        </li>
+      </ul>
+      <p>Thank you for vsiting our website</p>
+      <span class="clear"></span>
+    </footer>
+		<script>
+		function validate()
+    {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        var loginlist = [{"username":"usr1", "password":"a123"},{"username":"usr2", "password":"a123"},{"username":"usr3", "password":"a123"},{"username":"admin","password":"admin"}];
+        var logged = false;
+            for(var i =0; i < 4; i++){
+                if(username == loginlist[i].username && password == loginlist[i].password){
+                    logged = true;
+					break;
+                }
+            }
+						if(!(localStorage.getItem("username")==null)){
+			if(username==localStorage.getItem("username")&&password==localStorage.getItem("password"))
+			{
+			logged=true;
+
+			}
+		}
+            if(logged==true){
+			localStorage.setItem("login","true");
+			if(username=="admin")
+			{
+			localStorage.setItem("admin","true");
+			window.open("file:///C:/Users/MOSTAFA/Desktop/admin%20(2).html");
+			}
+			else
+			{
+			localStorage.setItem("admin","false");
+			}
+            alert("User login");
+			window.open("file:///C:/Users/MOSTAFA/Desktop/home2.html");}
+            else if(logged==false)
+            {
+			 alert("your login is fail");
+			}
+        }
+		function sign_up()
+		{
+		 window.open("file:///C:/Users/MOSTAFA/Desktop/sign_up.html");
+		}
+</script>
+	</body>
+</html>

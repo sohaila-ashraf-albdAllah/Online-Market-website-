@@ -1,0 +1,117 @@
+body
+{
+    background: url(MATRIALS/DE.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+}
+.main_div
+{
+	position:relative;
+}
+fieldset
+{
+	background:#FFF;
+	width:500px;
+	height:680px;
+	text-align:left;
+	padding: 50px;
+    border: 1px solid #FFF;
+    box-shadow:10px 5px 20px #000000;
+    border-radius:20px;
+}
+fieldset legend
+{
+	font-style:italic;
+	font-weight:lighter;
+	font-size:50px;
+	color: #383e56;
+	display:none;
+} 
+
+fieldset span
+{
+	color:red;
+	font-size:11px;
+}
+fieldset input
+{
+  margin: 10px;
+  border-radius:20px;
+  width:200px;
+  height:25px;
+}
+.submit
+{
+    position: absolute;
+    right: 680px;
+	margin-top:40px;
+    text-align: center;
+	cursor:pointer;
+	box-shadow:-1px 2px 3px #000000;
+}
+.submit:hover
+{
+	background:#E0E0E0;
+}
+.input_style
+{
+    position: relative;
+	left:0px;
+}
+label
+{
+ 	text-transform:capitalize;
+	font-size:20px;
+    color:#383e56;
+}
+footer
+{
+  height: 50px;
+  padding: 10px;
+    
+}
+footer ul
+{
+  list-style: none;
+  float:left;
+}
+footer ul li
+{
+  width:150px;
+  float: left;
+  padding-top: 10px;
+  padding-right:17px;
+  line-height:0px;
+}
+footer a
+{
+  text-decoration: none;
+  color:black;
+  font-size:15px;
+}
+
+.home_footer
+{  
+  margin-left: -90px;
+  font-size:15px;
+}
+footer p
+{
+	line-height:50px;
+    font-size:15px;
+    float: right;
+    padding-right:20px;
+    margin-top: 0px;
+}
+.clear
+{
+ clear: both;
+}
+.first_list
+{
+  margin-right: -80px;
+  margin-left: 0px;
+/*end of the footer*/

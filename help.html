@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Help</title>
+    <link rel="stylesheet" href="help.css">
+  </head>
+  <body onload="displaying()">
+    <header>
+        <img src="MATRIALS/MOM2.png" alt="logo" width="50px" height="50px">
+        <center><h1>Masters Online Market</h1></center>
+        <span class="clear"></span>
+    </header>
+    <nav class="my_nav">
+       <ul>
+         <li class="home_footer">
+     <a href="file:///C:/Users/MOSTAFA/Desktop/home2.html">Home</a></li>
+         <li>
+           <a href="file:///C:/Users/MOSTAFA/Desktop/fashion.html">Fashion</a>
+           <ul>
+             <li><a href="file:///C:/Users/MOSTAFA/Desktop/men.html">Men</a></li>
+             <li><a href="file:///C:/Users/MOSTAFA/Desktop/women.html">Women</a></li>
+             <li><a href="file:///C:/Users/MOSTAFA/Desktop/kids.html">Kids</a></li>
+           </ul>
+           </li>
+         <li>
+           <a href="file:///C:/Users/MOSTAFA/Desktop/tech.html">Technology</a>
+           <ul>
+             <li><a href="file:///C:/Users/MOSTAFA/Desktop/laptops.html">Laptops</a></li>
+             <li><a href="file:///C:/Users/MOSTAFA/Desktop/mobile.html">Mobiles</a></li>
+           </ul>
+         </li>
+         <li><a href="file:///C:/Users/MOSTAFA/Desktop/sports.html">Sporting</a></li>
+         <li><a href="file:///C:/Users/MOSTAFA/Desktop/beauty.html">Health &amp Beauty</a></li>
+       </ul>
+    </nav>
+    <body>
+      <div class="main">
+        <center><article >
+          <h2>Help</h2>
+          <p>If you have any questions or concerns.Please contact our customer service.<br> Email: example@fake.com <br>
+Telephone:0123456789
+</p>
+        </article></center>
+      </div>
+      <footer>
+    <hr>
+         <ul>
+           <li class="first_list"><a href="file:///C:/Users/MOSTAFA/Desktop/about.html">About Us</a></li>
+           <li><a href="file:///C:/Users/MOSTAFA/Desktop/programmers%20and%20editors.html">Devolpers &amp Editors</a></li>
+           <li><a href="file:///C:/Users/MOSTAFA/Desktop/help.html">Help</a></li>
+           <li  class="home_footer"><a href="file:///C:/Users/MOSTAFA/Desktop/admin%20(2).html">Admin</li>
+           <li class="home_footer"> <a href="file:///C:/Users/MOSTAFA/Desktop/home2.html">Home</a>
+           </li>
+         </ul>
+         <p>Thank you for vsiting our website</p>
+         <span class="clear"></span>
+       </footer>
+    <script type="text/javascript">
+        function myFunction()
+        {
+        var input, filter, ul, li, a, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+        for (var i = 0; i < li.length; i++)
+        {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1)
+        {
+        li[i].style.display = "list-item";
+        }
+
+        else
+        {
+        li[i].style.display = "none";
+        }
+        if(input.value == "")
+        {
+        li[i].style.display="none";
+        }
+        }
+        }
+        function search()
+        {
+        var input, ul, li;
+        input = document.getElementById("myInput");
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+        for (var i = 0; i < li.length; i++)
+        {
+        if(input.value=="")
+        {
+        li[i].style.display = "none";
+        }
+        }
+        }
+        function displaying()
+        {
+        var ul,li;
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+        for (var i = 0; i < li.length; i++)
+        {
+        li[i].style.display = "none";
+        }
+        }
+    </script>
+  </body>
+</html>

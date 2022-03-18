@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>search</title>
+    <style>
+     ul{display: none}
+    </style>
+  </head>
+  <body>
+    <input type="search" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." onsearch="search()">
+      <ul id="myUL">
+      <li><a href="file:///C:/Users/MOSTAFA/Desktop/mobaco%20polo%20shirt-black.html">mobaco polo shirt-black</a></li>
+      <li><a href="file:///C:/Users/MOSTAFA/Desktop/Andora_slim-fit_pants.html">Andora slim-fit trousers-black</a></li>
+      <li><a href="file:///C:/Users/MOSTAFA/Desktop/Logo_%20Waistband_%20Sweatpants.html">Logo Waistband Sweatpants</a></li>
+      <li>  <a href="file:///C:/Users/MOSTAFA/Desktop/Sneakers_%20Adidas.html">Sneakers Adidas original</a></li>
+      <li>  <a href="file:///C:/Users/MOSTAFA/Desktop/DeFacto_shirt_blue.html">Defacto Patterned slim-fit shirt-blue</a></li>
+      <li>  <a href="file:///C:/Users/MOSTAFA/Desktop/DeFacto_Long%20_Sleeves_Dress.html">Defacto long sleeves dress-Red/Black</a></li>
+      <li>  <a href="file:///C:/Users/MOSTAFA/Desktop/Pointy_Toe_Twist.html">Pointy Toe Twist accent slip on Ballerina flats</a></li>
+      <li><a href="file:///C:/Users/MOSTAFA/Desktop/M.SOL%20Solid%20Jeans.html">M.SOL Solid Jeans Navy-Blue</a></li>
+      <li>  <a href="file:///C:/Users/MOSTAFA/Desktop/DeFacto_Sweatshirt_Grey.html">Defacto Slogan Printed sweatshirt-Grey</a></li>
+      <li>  <a href="file:///C:/Users/MOSTAFA/Desktop/DeFacto_dress_purple.html">Defacto round neck poplin dress-purple</a></li>
+      <li><a href="file:///C:/Users/MOSTAFA/Desktop/SHEIN%20Girls.html">SHEIN Girls Frilled Neck Shirred Waist Floral Print Chiffon Dress</a></li>
+      <li><a href="file:///C:/Users/MOSTAFA/Desktop/Toddler%20Boys.html">Toddler Boys tropical shirt with slogan pached shorts</a></li>
+      <li>    <a href="file:///C:/Users/MOSTAFA/Desktop/Toddler_Girls.html">Toddler Girls bow decor tweed ankle strap flats</a></li>
+      <li>  <a href="file:///C:/Users/MOSTAFA/Desktop/Toddler_Boys.html">Toddler Boys Textured Slip On Sneakers</a></li>
+      <li><a href="file:///C:/Users/MOSTAFA/Desktop/Glitter_Handle_Makeup.html">7pcs Glitter Handle Makeup Brush With 1pc Storage Bag</a></li>
+      <li><a href="file:///C:/Users/MOSTAFA/Desktop/HUDA_BEAUTY.html">HUDA BEAUTY 9-Color Obsessions Eyeshadow Palette Multicolour</a></li>
+      <li><a href="file:///C:/Users/MOSTAFA/Desktop/Forever_Luna.html">Forever Luna Mini 2 Facial Cleansing Brush Pink</a></li>
+      <li>  <a href="file:///C:/Users/MOSTAFA/Desktop/L'Oreal_Paris_Pure_Clay.html">L'Oreal Paris Pure Clay Detoxifying Face Gel Wash 150ml</a></li>
+      <li>    <a href="file:///C:/Users/MOSTAFA/Desktop/Rubber_Dumbbell.html">Rubber Dumbbell 3 Kg - Blue</a></li>
+      <li><a href="file:///C:/Users/MOSTAFA/Desktop/SEATE_%20and_STANDING.html">SEATED and STANDING TWISTER GT-361</a></li>
+      <li>  <a href="file:///C:/Users/MOSTAFA/Desktop/11pcs_Latex_Resistance.html">11pcs Latex Resistance Bands Fitness Exercise Tube Rope Set Yoga ABS P90X Workout [H8329 ]</a></li>
+      <li><a href="file:///C:/Users/MOSTAFA/Desktop/Yoga_balance.html">Yoga balance disc- purple</a></li>
+      <li>  <a href="file:///C:/Users/MOSTAFA/Desktop/Lenovo_Ideapad.html">Lenovo Ideapad 120S Laptop With 11.6-Inch Display, Celeron Processor/4GB RAM/500GB HDD/Intel HD Graphics Mineral Grey</a></li>
+      <li><a href="file:///C:/Users/MOSTAFA/Desktop/DELL_Inspiron.html">DELL Inspiron 15-3565 All-In-One Desktop With 15.6-Inch Display, AMD A9 Processor/4GB RAM/500GB HDD/AMD R5 Graphics Black</a></li>
+      <li><a href="file:///C:/Users/MOSTAFA/Desktop/Samsung_Galaxy_S20.html">Samsung Galaxy S20 Dual SIM Cloud Pink 8GB RAM 128GB 4G LTE - International version</a></li>
+      <li><a href="file:///C:/Users/MOSTAFA/Desktop/Apple_iPhone%2011.html">Apple iPhone 11 Pro Max With FaceTime Midnight Green 256GB 4G LTE - International Specs</a></li>
+    </ul>
+    <script>
+    function myFunction() {
+      var input, filter, ul, li, a, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName("li");
+      for (var i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "list-item";
+        }
+
+    	else {
+          li[i].style.display = "none";
+        }
+
+      if(input.value == "")
+    {
+    li[i].style.display="none";
+    }
+    }
+    }
+    function search()
+    {
+    var input, ul, li;
+      input = document.getElementById("myInput");
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName("li");
+      for (var i = 0; i < li.length; i++) {
+    if(input.value=="")
+    {
+     li[i].style.display = "none";
+    }
+    }
+    }
+    </script>
+  </body>
+</html>

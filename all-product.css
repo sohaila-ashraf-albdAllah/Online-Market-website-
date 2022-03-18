@@ -1,0 +1,280 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  font-family:arial,serif;
+}
+body
+{
+    background: url(MATRIALS/DE.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+}
+/*********************************************************************************************/
+/*start of the header*/
+
+header
+{
+  height: 60px;
+  padding: 60px;
+}
+h1
+{
+    position: absolute;
+    top: 80px;
+    font-family: Courier;
+
+}
+header img{
+  float:left;
+  height:100px;
+  width:350px;
+}
+.sign_up, .login
+        {
+           position: relative;
+        }
+        .sign_up, .login
+        {
+        	height:30px;
+        	width:70px;
+        	cursor:pointer;
+          border-radius:30px;
+          top:-62px;
+        }
+        .login
+        {
+          left:755px;
+        }
+        .sign_up
+        {
+          left:763px;
+        }
+        .search
+        {
+          left: 750px;
+          height: 29px;
+          margin-top: 0.7%;
+          position: relative;
+          display: block;
+          border-radius:30px;
+        }
+
+.login:hover,.sign_up:hover
+{
+	background:#E0E0E0;
+}
+
+.clear
+{
+  clear: both;
+}
+header h1
+{
+ display: inline;
+ left:500px;
+ font-size: 37px;
+ color:#383e56;
+}
+/*end of the header*/
+/*start of products view*/
+
+table
+{
+    line-height: 30px;
+    height: 500px;
+    text-align: center;
+    font-size: 19px;
+    padding: 50px;
+    margin-top: 15px;
+}
+td img
+{
+    width: 200px;
+    height: 200px;
+    padding: 3px;
+    margin: 30px;
+    border-radius: 100px;
+    box-shadow: 5px 5px 10px #000;
+
+}
+tr a
+{
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    margin: 10px;
+    font-size: 20px;
+    color:#383e56;
+    border-radius: 150px;
+}
+tr
+{
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    margin: 10px ;
+    color:#383e56;
+    border-radius: 600px;
+}
+span
+{
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    margin: 10px ;
+    font-weight: bold;
+    color:#383e56;
+}
+.clear
+{
+    display: none;
+}
+/*end of products view*/
+
+/*start of the nav*/
+.my_nav
+{
+    margin: -9px auto;
+    padding: 10px;
+    height: 100px;
+    position: relative;
+    left:25%;
+    top: 40px;
+}
+.my_nav ul
+{
+  list-style: none;
+
+}
+.my_nav ul li
+{
+  background: white;
+  width: 170px;
+  border-radius:0px 20px 0px 20px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  float: left;
+  color:#383e56;
+  font-size: 20px;
+  position: relative;
+  font-family: arial serif;
+  font-weight: bold;
+  box-shadow:2px 2px 10px #000;
+  transition-duration: 2.0s;
+
+ }
+
+.my_nav ul li:hover
+{
+    background: #E0E0E0;
+}
+
+.search-list ul li
+{
+    display: none;
+}
+ul
+{
+    list-style-type: none;
+
+}
+.div1 li:hover
+{
+  background: #DDD;
+}
+
+.div1
+{
+    border-radius:10px;
+    line-height: 50px;
+    background-color: white;
+    width: 170px;
+    position: absolute;
+    right: 18px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 19px;
+    box-shadow: 3px 3px 5px;
+    border-color: black;
+    z-index: 6;
+}
+div a
+{
+   color:#383e56;
+   text-decoration: none;
+}
+.search:hover >ul
+{
+    display: block;
+
+}
+.my_nav ul ul
+{
+  display: none;
+}
+.my_nav ul li:hover >ul
+{
+  display: block;
+}
+.my_nav a
+{
+   color:#383e56;
+   text-decoration: none;
+}
+/*end of the nav*/
+/*start of the footer*/
+footer
+{
+    height: 50px;
+    padding: 10px;
+    position: relative;
+    top: 160px;
+}
+footer ul
+{
+  list-style: none;
+  float:left;
+}
+footer ul li
+{
+  width:156px;
+  float: left;
+  padding-top: 20px;
+  padding-right:17px;
+  line-height:20px;
+}
+footer a
+{
+  text-decoration: none;
+  color:black;
+  font-size:15px;
+}
+.home_footer
+{
+  margin-left: -90px;
+  font-size:15px;
+}
+footer p
+{
+	line-height:50px;
+    font-size:15px;
+    float: right;
+    padding-right:20px;
+    margin-top: 0px;
+}
+.clear
+{
+ clear: both;
+}
+.first_list
+{
+  margin-right: -80px;
+  margin-left: 0px;
+/*end of the footer*/

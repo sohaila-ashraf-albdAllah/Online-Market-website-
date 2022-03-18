@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="admin.css">
+  </head>
+  <body onload="up_data()">
+    <header>
+        <img src="MATRIALS/MOM2.png" alt="logo" width="50px" height="50px">
+        <center><h1>Masters online shop</h1></center>
+        <span class="clear"></span>
+    </header>
+    <nav class="my_nav">
+       <ul>
+         <li class="home_footer">
+     <a href="file:///C:/Users/MOSTAFA/Desktop/home2.html">Home</a></li>
+         <li>
+           <a href="file:///C:/Users/MOSTAFA/Desktop/fashion.html">Fashion</a>
+           <ul>
+             <li><a href="file:///C:/Users/MOSTAFA/Desktop/men.html">Men</a></li>
+             <li><a href="file:///C:/Users/MOSTAFA/Desktop/women.html">Women</a></li>
+             <li><a href="file:///C:/Users/MOSTAFA/Desktop/kids.html">Kids</a></li>
+           </ul>
+           </li>
+         <li>
+           <a href="file:///C:/Users/MOSTAFA/Desktop/tech.html">Technology</a>
+           <ul>
+             <li><a href="file:///C:/Users/MOSTAFA/Desktop/laptops.html">Laptops</a></li>
+             <li><a href="file:///C:/Users/MOSTAFA/Desktop/mobile.html">Mobiles</a></li>
+           </ul>
+         </li>
+         <li><a href="file:///C:/Users/MOSTAFA/Desktop/sports.html">Sporting</a></li>
+         <li><a href="file:///C:/Users/MOSTAFA/Desktop/beauty.html">Health &amp Beauty</a></li>
+       </ul>
+    </nav>
+     <!-- <h1>admin page</h1> -->
+     <center>
+         <div class="BigDiv">
+            <div class="div"id="1">
+              <img src="MATRIALS/men wear 2.jpg" alt="black_shirt photo" width="100" height="100"><br>
+              <a href="file:///C:/Users/MOSTAFA/Desktop/mobaco%20polo%20shirt-black.html">Polo black T-Shirt</a>
+              <p>current price is: <span id="1001">360 EGP</span></p>
+              <span>new price:</span> <input type="number" id="101" name="" value="" required > <br>
+               <input type="button" name="" value="remove" onclick="delete1(1)"> <br>
+               <input type="button" name="" value="submit" onclick="change(101,1001)"><br><br>
+            </div>
+			<div class="div"id="2">
+              <img src="MATRIALS/men wear.jpg" alt="black_pants photo" width="100" height="100"> <br>
+              <a href="file:///C:/Users/MOSTAFA/Desktop/Andora_slim-fit_pants.html">Andora Black Slim trousersk</a>
+              <p>current price is: <span id="1002">524 EGP</span></p>
+              <span>new price:</span> <input type="number" id="102" name="" value=""><br>
+              <input type="button" name="" value="remove"onclick="delete1(2)"> <br>
+              <input type="button" name="" value="submit"onclick="change(102,1002)"><br><br>
+            </div >
+			<div class="div"id="3">
+              <img src="MATRIALS/men wear 4.jpg" alt="logo photo" width="100" height="100"> <br>
+              <a href="file:///C:/Users/MOSTAFA/Desktop/Logo_%20Waistband_%20Sweatpants.html">Calvin Klien</a>
+              <p>current price is: <span id="1003">1500 EGP</span></p>
+              <span>new price:</span> <input type="number" id="103" name="" value=""> <br>
+              <input type="button" name="" value="remove"onclick="delete1(3)"> <br>
+              <input type="button" name="" value="submit"onclick="change(103,1003)"><br><br>
+            </div>
+            <div class="div"id="4">
+              <img src="MATRIALS/shoes.jpg" alt="sneakers adidas photo" width="100" height="100"> <br>
+              <a href="file:///C:/Users/MOSTAFA/Desktop/Sneakers_%20Adidas.html">Original Adidas Sneakers</a>
+              <p>current price is: <span id="1004">2500 EGP</span></p>
+              <span>new price:</span> <input type="number" id="104" name="" value=""><br>
+              <input type="button" name="" value="remove"onclick="delete1(4)"> <br>
+              <input type="button" name="" value="submit"onclick="change(104,1004)"><br><br>
+            </div>
+           <div class="div"id="5">
+              <img src="MATRIALS/men wear 3.jpg" alt="blue shirt photo" width="100" height="100"> <br>
+              <a href="file:///C:/Users/MOSTAFA/Desktop/DeFacto_shirt_blue.html">SLim Blue Shirt</a>
+              <p>current price is: <span id ="1005">300 EGP</span></p>
+              <span>new price:</span> <input type="number" id="105" name="" value=""><br>
+              <input type="button" name="" value="remove"onclick="delete1(5)"> <br>
+              <input type="button" name="" value="submit"onclick="change(105,1005)"><br><br>
+            </div>
+            <div class="div"id="6">
+              <img src="MATRIALS/women dress.jpg" alt="long dress photo" width="100" height="100"><br>
+              <a href="file:///C:/Users/MOSTAFA/Desktop/DeFacto_Long%20_Sleeves_Dress.html">Defacto Red Dress</a>
+              <p>current price is: <span id="1006">600 EGP</span></p>
+              <span>new price:</span> <input type="number" id="106" name="" value=""><br>
+              <input type="button" name="" value="remove"onclick="delete1(6)"> <br>
+              <input type="button" name="" value="submit"onclick="change(106,1006)"><br><br>
+            </div>
+     <div class="div"id="7">
+              <img src="MATRIALS/women shoes.jpg" alt="yellow shoes photo" width="100" height="100"> <br>
+              <a href="file:///C:/Users/MOSTAFA/Desktop/Pointy_Toe_Twist.html">Ballerina Flats</a>
+              <p>current price is: <span id="1007">285 EGP</span></p>
+              <span>new price:</span> <input type="number" id="107" name="" value=""><br>
+              <input type="button" name="" value="remove"onclick="delete1(7)"> <br>
+              <input type="button" name="" value="submit"onclick="change(107,1007)"><br><br>
+            </div>
+            <div class="div"id="8">
+              <img src="MATRIALS/women wear.jpg" alt="jeans photo" width="100" height="100"> <br>
+              <a href="file:///C:/Users/MOSTAFA/Desktop/M.SOL%20Solid%20Jeans.html">Navy-Blue Jeans</a>
+              <p>current price is: <span id="1008">270 EGP</span></p>
+              <span>new price:</span> <input type="number" id="108" name="" value=""><br>
+              <input type="button" name="" value="remove"onclick="delete1(8)"> <br>
+              <input type="button" name="" value="submit"onclick="change(108,1008)"><br><br>
+            </div>
+           <div class="div"id="9">
+              <img src="MATRIALS/women wear 2.jpg" alt="sweatshirt_Gray photo" width="100" height="100"> <br>
+              <a href="file:///C:/Users/MOSTAFA/Desktop/DeFacto_Sweatshirt_Grey.html">Defacto Grey Sweatshirt</a>
+              <p>current price is: <span id="1009">500 EGP</span></p>
+              <span>new price:</span> <input type="number" id="109" name="" value=""><br>
+              <input type="button" name="" value="remove"onclick="delete1(9)"> <br>
+              <input type="button" name="" value="submit"onclick="change(109,1009)"><br><br>
+            </div>
+            <div class="div"id="10">
+              <img src="MATRIALS/women dress 3.jpg" alt="dress_purple photo" width="100" height="100"> <br>
+              <a href="file:///C:/Users/MOSTAFA/Desktop/DeFacto_dress_purple.html">Round neck purple Dress</a>
+              <p>current price is: <span id="1010">600 EGP</span></p>
+              <span>new price:</span> <input type="number" id="110" name="" value=""><br>
+              <input type="button" name="" value="remove"onclick="delete1(10)"> <br>
+              <input type="button" name="" value="submit"onclick="change(110,1010)"><br><br>
+            </div>
+            <div class="div"id="11">
+              <img src="MATRIALS/women dress 2.jpg" alt="girl_dress photo" width="100" height="100"><br>
+              <a href="file:///C:/Users/MOSTAFA/Desktop/SHEIN%20Girls.html">Frilled Neck Dress</a>
+              <p>current price is: <span id="1011">427 EGP</span></p>
+              <span>new price:</span> <input type="number" id="111" name="" value=""><br>
+              <input type="button" name="" value="remove"onclick="delete1(11)"> <br>
+              <input type="button" name="" value="submit"onclick="change(111,1011)"><br><br>
+            </div>
+            <div class="div"id="12">
+              <img src="MATRIALS/kids wear.jpg" alt="hh photo" width="100" height="100"> <br>
+              <a href="file:///C:/Users/MOSTAFA/Desktop/Toddler%20Boys.html">Wearing kit</a>
+              <p>current price is: <span id="1012">173 EGP</span></p>
+              <span>new price:</span> <input type="number" id="112" name="" value=""><br>
+              <input type="button" name="" value="remove"onclick="delete1(12)"> <br>
+              <input type="button" name="" value="submit"onclick="change(112,1012)"><br><br>
+            </div>
+            <div class="div"id="13">
+              <img src="MATRIALS/kids wear 2.jpg" alt="girl_shoes photo" width="100" height="100"> <br>
+              <a href="file:///C:/Users/MOSTAFA/Desktop/Toddler_Girls.html">Girls Flats</a>
+              <p>current price is: <span id="1013">315 EGP</span></p>
+              <span>new price:</span> <input type="number" id="113" name="" value=""><br>
+              <input type="button" name="" value="remove"onclick="delete1(13)"> <br>
+              <input type="button" name="" value="submit"onclick="change(113,1013)"><br><br>
+            </div>
+            <div class="div"id="14">
+              <img src="MATRIALS/shoes 2.jpg" alt="boy_shoes photo" width="100" height="100"> <br>
+              <a href="file:///C:/Users/MOSTAFA/Desktop/Toddler_Boys.html">Boys Sneakers</a>
+              <p>current price is: <span id="1014">267 EGP</span></p>
+              <span>new price:</span> <input type="number" id="114" name="" value=""><br>
+              <input type="button" name="" value="remove"onclick="delete1(14)"> <br>
+              <input type="button" name="" value="submit"onclick="change(114,1014)"><br><br>
+            </div>
+            <div class="div"id="15">
+              <img src="MATRIALS/women beauty 3.jpg" alt="makeup photo" width="100" height="100"><br>
+              <a href="file:///C:/Users/MOSTAFA/Desktop/Glitter_Handle_Makeup.html">GlitterBrush</a>
+              <p>current price is: <span id="1015">95 EGP</span></p>
+              <span>new price:</span> <input type="number" id="115" name="" value=""><br>
+              <input type="button" name="" value="remove"onclick="delete1(15)"> <br>
+              <input type="button" name="" value="submit"onclick="change(115,1015)"><br><br>
+            </div>
+            <div class="div"id="16">
+              <img src="MATRIALS/women%20beauty.jpg" alt="HUDA_BEAUTY photo" width="100" height="100"> <br>
+              <a href="file:///C:/Users/MOSTAFA/Desktop/HUDA_BEAUTY.html">Eyeshadow</a>
+              <p>current price is: <span id="1016">950 EGP</span></p>
+              <span>new price:</span> <input type="number" id="116" name="" value=""><br>
+              <input type="button" name="" value="remove"onclick="delete1(16)"> <br>
+              <input type="button" name="" value="submit"onclick="change(116,1016)"><br><br>
+            </div>
+         <div class="div"id="17">
+              <img src="MATRIALS/idk.jpg" alt="Forever_Luna photo" width="100" height="100"> <br>
+              <a href="file:///C:/Users/MOSTAFA/Desktop/Forever_Luna.html">Facial Cleansing Brush</a>
+              <p>current price is: <span id="1017">85 EGP</span></p>
+              <span>new price:</span> <input type="number" id="117" name="" value=""><br>
+              <input type="button" name="" value="remove"onclick="delete1(17)"> <br>
+              <input type="button" name="" value="submit"onclick="change(117,1017)"><br><br>
+            </div>
+           <div class="div"id="18">
+              <img src="MATRIALS/women beauty 2.jpg" alt="L'Oreal_Pari_Pure_Clay photo" width="100" height="100"> <br>
+              <a href="file:///C:/Users/MOSTAFA/Desktop/L'Oreal_Paris_Pure_Clay.html">L'Oreal lotio</a>
+              <p>current price is: <span id="1018">160 EGP</span></p>
+              <span>new price:</span> <input type="number" id="118" name="" value=""><br>
+              <input type="button" name="" value="remove"onclick="delete1(18)"> <br>
+              <input type="button" name="" value="submit"onclick="change(118,1018)"><br><br>
+            </div>
+            <div class="div"id="19">
+              <img src="MATRIALS/sports.jpg" alt="dumble photo" width="100" height="100"><br>
+              <a href="file:///C:/Users/MOSTAFA/Desktop/Rubber_Dumbbell.html">Rubber Dumbbell 3 Kg - Blue</a>
+              <p>current price is: <span id="1019">299 EGP</span></p>
+              <span>new price:</span> <input type="number" id="119" name="" value=""><br>
+              <input type="button" name="" value="remove"onclick="delete1(19)"> <br>
+              <input type="button" name="" value="submit"onclick="change(119,1019)"><br><br>
+            </div>
+            <div class="div"id="20">
+              <img src="MATRIALS/sports 3.jpg" alt="SEATED_and_STANDING photo" width="100" height="100"> <br>
+              <a href="file:///C:/Users/MOSTAFA/Desktop/SEATE_%20and_STANDING.html">Seated and Standing Twister</a>
+              <p>current price is: <span id="1020">5000 EGP</span></p>
+              <span>new price:</span><input type="number" id="120" name="" value=""><br>
+              <input type="button" name="" value="remove"onclick="delete1(20)"> <br>
+              <input type="button" name="" value="submit"onclick="change(120,1020)"><br><br>
+            </div>
+          <div class="div"id="21">
+              <img src="MATRIALS/sports 4.jpg" alt="11pcs_Latex_Resistance photo" width="100" height="100"> <br>
+              <a href="file:///C:/Users/MOSTAFA/Desktop/11pcs_Latex_Resistance.html">Latex Resistance</a>
+              <p>current price is: <span id="1021">499 EGP</span></p>
+              <span>new price:</span><input type="number" id="121" name="" value=""><br>
+              <input type="button" name="" value="remove"onclick="delete1(21)"> <br>
+              <input type="button" name="" value="submit"onclick="change(121,1021)"><br><br>
+            </div>
+            <div class="div"id="22">
+              <img src="MATRIALS/sports 2.jpg" alt="Yoga_balance photo" width="100" height="100"> <br>
+              <a href="file:///C:/Users/MOSTAFA/Desktop/Yoga_balance.html">Yoga Balance Disc</a>
+              <p>current price is: <span id="1022">299 EGP</span></p>
+              <span>new price:</span><input type="number" id="122" name="" value=""><br>
+              <input type="button" name="" value="remove"onclick="delete1(22)"> <br>
+              <input type="button" name="" value="submit"onclick="change(122,1022)"><br><br>
+            </div>
+            <div class="div"id="23">
+              <img src="MATRIALS/laptop 2.jpg" alt="laptopp photo" width="100" height="100"><br>
+              <a href="file:///C:/Users/MOSTAFA/Desktop/Lenovo_Ideapad.html">Lenovo Ideapad 120S</a>
+              <p>current price is: <span id="1023">6999 EGP</span></p>
+              <span>new price:</span><input type="number" id="123" name="" value=""><br>
+              <input type="button" name="" value="remove"onclick="delete1(23)"> <br>
+              <input type="button" name="" value="submit"onclick="change(123,1023)"><br><br>
+            </div>
+            <div class="div"id="24">
+              <img src="MATRIALS/laptop%201.jpg" alt="laptope photo" width="100" height="100"> <br>
+              <a href="file:///C:/Users/MOSTAFA/Desktop/DELL_Inspiron.html">DELL Inspiron 15-3565</a>
+              <p>current price is: <span id="1024">6666 EGP</span></p>
+              <span>new price:</span><input type="number" id="124" name="" value=""><br>
+              <input type="button" name="" value="remove"onclick="delete1(24)"> <br>
+              <input type="button" name="" value="submit"onclick="change(124,1024)"><br><br>
+            </div>
+            <div class="div"id="25">
+              <img src="MATRIALS/galaxy.jpg" alt="Samsung_Galaxy_S20 photo" width="100" height="100"><br>
+              <a href="file:///C:/Users/MOSTAFA/Desktop/Samsung_Galaxy_S20.html">Samsung Galaxy S20</a>
+              <p>current price is: <span id="1025">15333 EGP</span></p>
+              <span>new price:</span><input type="number" id="125" name="" value=""><br>
+              <input type="button" name="" value="remove"onclick="delete1(25)"> <br>
+              <input type="button" name="" value="submit"onclick="change(125,1025)"><br><br>
+            </div>
+            <div class="div"id="26">
+            <img src="MATRIALS/iphoneto.jpg" alt="iphone photo" width="100" height="100"> <br>
+            <a href="file:///C:/Users/MOSTAFA/Desktop/Apple_iPhone%2011.html">Apple iPhone 11 Pro Max</a>
+            <p>current price is: <span id="1026">29999 EGP</span></p>
+            <span>new price:</span><input type="number" id="126" name="" value=""><br>
+            <input type="button" name="" value="remove"onclick="delete1(26)"> <br>
+            <input type="button" name="" value="submit"onclick="change(126,1026)"><br><br>
+          </div>
+     </div>
+ </center>
+
+    <script type="text/javascript">
+
+        function delete1(number){
+           localStorage.setItem(number,number);
+	var element = document.getElementById(number);
+	element.parentNode.removeChild(element);
+	}
+		function change(number,number2){
+		var price=document.getElementById(number).value;
+		if(price!="")
+		{
+		localStorage.setItem(number,document.getElementById(number).value);
+		document.getElementById(number2).innerHTML=(document.getElementById(number).value+" EGP");
+		}
+	}
+		function up_data(){
+		validation();
+		for(var j=101;j<=126;j++){
+		var i=localStorage.getItem(j);
+		var element = document.getElementById(i);
+		if(!(i==null))
+		document.getElementById(900+j).innerHTML=(i+" EGP");
+
+	}
+	}
+	function validation()
+	{
+	var k=localStorage.getItem("admin");
+	if(k=="false"||k==null)
+	{
+	alert("you are not an admin access refused!");
+	window.open("file:///C:/Users/MOSTAFA/Desktop/home2.html");
+	}
+	else
+	{
+	alert("you are the admin");
+	}
+	}
+    </script>
+  </body>
+</html>

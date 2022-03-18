@@ -1,0 +1,161 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  font-family:arial,serif;
+}
+body
+{
+    background: url(MATRIALS/DE.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+}
+/*******************************/
+/*start of the header*/
+
+header
+{
+  height: 60px;
+  padding: 60px;
+}
+h1
+{
+    position: absolute;
+    top: 80px;
+    font-family: Courier;
+}
+header img{
+  float:left;
+  height:100px;
+  width:350px;
+}
+
+.clear
+{
+  clear: both;
+}
+header h1
+{
+ display: inline;
+ left:580px;
+ font-size: 37px;
+ color: #383e56;
+}
+/*end of the headwe*/
+
+/*start of the nav*/
+.my_nav
+{
+  margin: -9px auto;
+  padding: 10px;
+  height: 100px;
+  position: relative;
+  left:25%;
+}
+.my_nav ul
+{
+  list-style: none;
+}
+.my_nav ul li
+{
+  background: white;
+  width: 170px;
+  border-radius:0px 20px 0px 20px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  float: left;
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+  font-family: arial serif;
+  font-weight: bold;
+  box-shadow:2px 2px 10px #000;
+  transition-duration: 2.0s;
+
+}
+
+.my_nav ul li:hover
+{
+    background: #E0E0E0;
+}
+.my_nav ul ul
+{
+  display: none;
+}
+.my_nav ul li:hover >ul
+{
+  display: block;
+}
+.my_nav a
+{
+   color:#383e56;
+   text-decoration: none;
+}
+/*start of designing the products*/
+div
+{
+    position: relative;
+    top: 60px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.div
+{
+    width: 220px;
+    border-radius:0px 20px 0px 20px;
+    height: 550px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    position: relative;
+    margin: 20px;
+    font-size: 17px;
+    color: #383e56;
+    padding: 20px;
+    left:90px;
+	background:#FFF;
+	box-shadow: 3px 3px 10px #000;
+}
+.div img
+{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: -2px 2px 10px #000;
+}
+
+
+.div a
+{
+    text-decoration: none;
+    color: #383e56;
+	font-size:16px;
+	font-weight: 200;
+	text-shadow: -3px 3px 3px #989898;
+}
+.div p span
+{
+    color: red;
+}
+.div span
+{
+    font-weight: 600;
+	color: #383e56;
+}
+.div p
+{
+    font-size: 16px;
+    font-weight: bolder;
+}
+.div input
+{
+    border-radius: 10px;
+    height: 30px;
+    width: 200px;
+    cursor: pointer;
+}

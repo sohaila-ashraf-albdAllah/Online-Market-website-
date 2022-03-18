@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="home2.css">
+  </head>
+  <body onload="displaying()">
+    <header>
+        <img src="MATRIALS/MOM2.png" alt="logo" width="50px" height="50px">
+        <center><h1>Masters online market</h1></center>
+        <input class="search" type="search" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." onsearch="search()">
+            <div class ="search-div">
+              <ul class ="search-list" id="myUL">
+                <li><a href="file:///C:/Users/MOSTAFA/Desktop/mobaco%20polo%20shirt-black.html">mobaco polo shirt</a><hr></li>
+                <li><a href="file:///C:/Users/MOSTAFA/Desktop/Andora_slim-fit_pants.html">Andora trousers</a><hr></li>
+                <li><a href="file:///C:/Users/MOSTAFA/Desktop/Logo_%20Waistband_%20Sweatpants.html">Logo Sweatpants</a><hr></li>
+                <li>  <a href="file:///C:/Users/MOSTAFA/Desktop/Sneakers_%20Adidas.html">Adidas sneakers</a><hr></li>
+                <li>  <a href="file:///C:/Users/MOSTAFA/Desktop/DeFacto_shirt_blue.html">Defacto shirt</a><hr></li>
+                <li>  <a href="file:///C:/Users/MOSTAFA/Desktop/DeFacto_Long%20_Sleeves_Dress.html">Defacto dress-Red/Black</a><hr></li>
+                <li>  <a href="file:///C:/Users/MOSTAFA/Desktop/Pointy_Toe_Twist.html">Ballerina flats</a><hr></li>
+                <li><a href="file:///C:/Users/MOSTAFA/Desktop/M.SOL%20Solid%20Jeans.html">Jeans Navy-Blue</a><hr></li>
+                <li>  <a href="file:///C:/Users/MOSTAFA/Desktop/DeFacto_Sweatshirt_Grey.html">Defacto sweatshirt</a><hr></li>
+                <li>  <a href="file:///C:/Users/MOSTAFA/Desktop/DeFacto_dress_purple.html">Defacto dress-purple</a><hr></li>
+                <li><a href="file:///C:/Users/MOSTAFA/Desktop/SHEIN%20Girls.html">SHEIN Girls Dress</a><hr></li>
+                <li><a href="file:///C:/Users/MOSTAFA/Desktop/Toddler%20Boys.html">Toddler Boys set</a><hr></li>
+                <li>    <a href="file:///C:/Users/MOSTAFA/Desktop/Toddler_Girls.html">Toddler Girls flats</a><hr></li>
+                <li>  <a href="file:///C:/Users/MOSTAFA/Desktop/Toddler_Boys.html">Toddler Boys Sneakers</a><hr></li>
+                <li><a href="file:///C:/Users/MOSTAFA/Desktop/Glitter_Handle_Makeup.html">Makeup Brush </a><hr></li>
+                <li><a href="file:///C:/Users/MOSTAFA/Desktop/HUDA_BEAUTY.html">Eyeshadow Palette </a><hr></li>
+                <li><a href="file:///C:/Users/MOSTAFA/Desktop/Forever_Luna.html">Facial Cleansing Brush</a><hr></li>
+                <li>  <a href="file:///C:/Users/MOSTAFA/Desktop/L'Oreal_Paris_Pure_Clay.html">Face Gel Wash</a><hr></li>
+                <li>    <a href="file:///C:/Users/MOSTAFA/Desktop/Rubber_Dumbbell.html">Dumbbell 3 Kg </a><hr></li>
+                <li><a href="file:///C:/Users/MOSTAFA/Desktop/SEATE_%20and_STANDING.html">SEATED and STANDING TWISTER </a><hr></li>
+                <li>  <a href="file:///C:/Users/MOSTAFA/Desktop/11pcs_Latex_Resistance.html">Fitness Exercise Tube Rope Set </a><hr></li>
+                <li><a href="file:///C:/Users/MOSTAFA/Desktop/Yoga_balance.html">Yoga balance disc</a><hr></li>
+                <li>  <a href="file:///C:/Users/MOSTAFA/Desktop/Lenovo_Ideapad.html">Lenovo Laptop </a><hr></li>
+                <li><a href="file:///C:/Users/MOSTAFA/Desktop/DELL_Inspiron.html">DELL Inspiron laptop </a><hr></li>
+                <li><a href="file:///C:/Users/MOSTAFA/Desktop/Samsung_Galaxy_S20.html">Samsung Galaxy S20 </a><hr></li>
+                <li><a href="file:///C:/Users/MOSTAFA/Desktop/Apple_iPhone%2011.html">Apple iPhone 11 Pro Max</a><hr></li>
+              </ul>
+            </div>
+        <input class="login" type="button" name="login" value="login" id="log_in" onclick="log_in()">
+        <input class="sign_up" type="button" name="sign up" value="sign up" id="sign_up" onclick="sign_up()">
+        <input class="login" type="button" name="logout" value="logout" id="log_out" onclick="log_out()">
+        <span class="clear"></span>
+    </header>
+    <nav class="my_nav">
+       <ul>
+         <li class="home_footer">
+     <a href="file:///C:/Users/MOSTAFA/Desktop/home2.html">Home</a></li>
+         <li>
+           <a href="file:///C:/Users/MOSTAFA/Desktop/fashion.html">Fashion</a>
+           <ul>
+             <li><a href="file:///C:/Users/MOSTAFA/Desktop/men.html">Men</a></li>
+             <li><a href="file:///C:/Users/MOSTAFA/Desktop/women.html">Women</a></li>
+             <li><a href="file:///C:/Users/MOSTAFA/Desktop/kids.html">Kids</a></li>
+           </ul>
+           </li>
+         <li>
+           <a href="file:///C:/Users/MOSTAFA/Desktop/tech.html">Technology</a>
+           <ul>
+             <li><a href="file:///C:/Users/MOSTAFA/Desktop/laptops.html">Laptops</a></li>
+             <li><a href="file:///C:/Users/MOSTAFA/Desktop/mobile.html">Mobiles</a></li>
+           </ul>
+         </li>
+         <li><a href="file:///C:/Users/MOSTAFA/Desktop/sports.html">Sporting</a></li>
+         <li><a href="file:///C:/Users/MOSTAFA/Desktop/beauty.html">Health &amp Beauty</a></li>
+       </ul>
+    </nav>
+    <!-- start of the image slide bar-->
+    <div class="slideshow-container">
+		<div class="mySlides fade">
+		  <div class="numbertext">1 / 3</div>
+		  <img src="MATRIALS/sports 2.jpg" width="1000" height="500">
+
+		</div>
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 3</div>
+		  <img src="laptop.jpg" width="1000" height="500" >
+
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 3</div>
+		  <img src="dumble.jpg" width="1000" height="500" >
+
+		</div>
+    </div>
+    <br>
+    <!-- end of the image slide bar-->
+
+    <div class="fisrt_div">
+		<div class="div"id="2">
+	       <img src="MATRIALS/men wear.jpg" alt="black_pants photo" width="100" height="100"> <br>
+		   <a href="file:///C:/Users/MOSTAFA/Desktop/men.html">Men</a>
+		</div >
+		<div class="div"id="12">
+		   <img src="MATRIALS/kids wear.jpg" alt="hh photo" width="100" height="100"> <br>
+		   <a href="file:///C:/Users/MOSTAFA/Desktop/kids.html">Boys</a>
+		</div>
+	    <div class="div"id="11">
+           <img src="MATRIALS/women dress 2.jpg" alt="girl_dress photo" width="100" height="100"><br>
+           <a href="file:///C:/Users/MOSTAFA/Desktop/kids.html">Girls</a>
+        </div>
+    </div>
+	<span class="clear"></span>
+    <div class="sec-div">
+      <div class="div"id="9">
+           <img src="MATRIALS/women wear 2.jpg" alt="sweatshirt_Gray photo" width="100" height="100"> <br>
+           <a href="file:///C:/Users/MOSTAFA/Desktop/women.html">Women</a>
+        </div>
+		<div class="div"id="22">
+           <img src="MATRIALS/sports 2.jpg" alt="Yoga_balance photo" width="100" height="100"> <br>
+           <a href="file:///C:/Users/MOSTAFA/Desktop/sports.html">Sport</a>
+        </div>
+		<div class="div"id="15">
+           <img src="MATRIALS/women beauty 3.jpg" alt="makeup photo" width="100" height="100"><br>
+           <a href="file:///C:/Users/MOSTAFA/Desktop/beauty.html">Beauty</a>
+        </div>
+    </div>
+	<span class="clear"></span>
+    <div class="th-div">
+        <div class="last-div"id="25">
+           <img src="MATRIALS/galaxy.jpg" alt="Samsung_Galaxy_S20 photo" width="100" height="100"><br>
+           <a href="file:///C:/Users/MOSTAFA/Desktop/mobile.html">Mobiles</a>
+        </div>
+		<div class="last-div"id="24">
+           <img src="laptop.jpg" alt="laptope photo" width="100" height="100"> <br>
+           <a href="file:///C:/Users/MOSTAFA/Desktop/laptops.html">Laptops</a>
+        </div>
+    </div>
+	<span class="clear"></span>
+  <footer>
+<hr>
+     <ul>
+       <li class="first_list"><a href="file:///C:/Users/MOSTAFA/Desktop/about.html">About Us</a></li>
+       <li><a href="file:///C:/Users/MOSTAFA/Desktop/programmers%20and%20editors.html">Devolpers &amp Editors</a></li>
+       <li><a href="file:///C:/Users/MOSTAFA/Desktop/help.html">Help</a></li>
+       <li  class="home_footer"><a href="file:///C:/Users/MOSTAFA/Desktop/admin%20(2).html">Admin</li>
+       <li class="home_footer"> <a href="file:///C:/Users/MOSTAFA/Desktop/home2.html">Home</a>
+       </li>
+     </ul>
+     <p>Thank you for vsiting our website</p>
+     <span class="clear"></span>
+   </footer>
+    <script>
+    function log_in() {
+       window.open("file:///C:/Users/MOSTAFA/Desktop/log_in.html");
+    }
+    function sign_up() {
+       window.open("file:///C:/Users/MOSTAFA/Desktop/sign_up.html");
+    }
+    function myFunction() {
+var input, filter, ul, li, a, txtValue;
+input = document.getElementById("myInput");
+filter = input.value.toUpperCase();
+ul = document.getElementById("myUL");
+li = ul.getElementsByTagName("li");
+for (var i = 0; i < li.length; i++) {
+ a = li[i].getElementsByTagName("a")[0];
+ txtValue = a.textContent;
+if (txtValue.toUpperCase().indexOf(filter)== 0) {
+li[i].style.display = "list-item";
+}
+else {
+   li[i].style.display = "none";
+ }
+if(input.value == "")
+{
+li[i].style.display="none";
+}
+}
+}
+    function search()
+    {
+    var input, ul, li;
+    input = document.getElementById("myInput");
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (var i = 0; i < li.length; i++)
+    {
+    if(input.value=="")
+    {
+    li[i].style.display = "none";
+    }
+    }
+    }
+    function displaying()
+    {
+    var ul,li;
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (var i = 0; i < li.length; i++)
+    {
+    li[i].style.display = "none";
+    }
+    check();
+    }
+       function check()
+      {
+      var i;
+      i=localStorage.getItem("login");
+      if(i!=null)
+      {
+      document.getElementById("sign_up").style.display="none";
+      document.getElementById("log_in").style.display="none";
+      document.getElementById("log_out").style.display="inline";
+      }
+      else
+      {
+      document.getElementById("sign_up").style.display="inline";
+      document.getElementById("log_in").style.display="inline";
+      document.getElementById("log_out").style.display="none";
+      }
+      }
+      function log_out()
+      {
+      localStorage.removeItem("login");
+      localStorage.removeItem("admin");
+      document.getElementById("sign_up").style.display="inline";
+      document.getElementById("log_in").style.display="inline";
+      document.getElementById("log_out").style.display="none";
+       window.open("file:///C:/Users/MOSTAFA/Desktop/home2.html");
+      }
+      var slideIndex = 0;
+      showSlides();
+      function showSlides() {
+        var i;
+        var slides1 = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides1.length; i++) {
+          slides1[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides1.length) {slideIndex = 1}
+        slides1[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 5000);
+      }
+</script>
+  </body>
+</html>

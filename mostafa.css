@@ -1,0 +1,296 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  font-family:arial,serif;
+}
+body
+{
+    background: url(MATRIALS/DE.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+}
+/*********************************************************************************************/
+/*start of the header*/
+
+header
+{
+  height: 60px;
+  padding: 60px;
+}
+h1
+{
+    position: absolute;
+    top: 80px;
+    font-family: Courier;
+    
+}
+header img{
+  float:left;
+  height:100px;
+  width:350px;
+}
+.sign_up, .login, .search
+{
+   border-radius:30px;
+   position: relative;
+   left: 50px; 
+
+}
+.sign_up, .login
+{
+	height:30px;
+	width:70px;
+	cursor:pointer;
+}
+.login
+{
+  left:800px;
+}
+.sign_up
+{
+  left:830px;
+}
+.login:hover,.sign_up:hover
+{
+	background:#E0E0E0;
+}
+.search
+{
+  left:780px;
+  height:30px;
+}
+.clear
+{
+  clear: both;
+}
+header h1
+{
+ display: inline; 
+ left:500px;
+ font-size: 37px;
+ color:#383e56;
+}
+/*end of the header*/
+/*start of section*/
+
+.devise_name
+{
+    position: absolute;
+    left: 60px;
+    top: 15px;
+    font-weight: bolder;
+    font-size: 160%;
+    color: #383e56;
+}
+
+.device_details
+{
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    font-size: 170%;
+    line-height: 30px;
+    color: #383e56;
+}
+
+/*End of section*/
+
+/*start of product*/
+.product
+{
+    position: absolute;
+    right: 50px;
+    height: 700px;
+    width: 450px;
+    top: 75px ;
+}
+/*end of product*/
+
+/*start of the nav*/
+.my_nav
+{
+    margin: -9px auto;
+    padding: 10px;
+    height: 20px;
+    position: relative;
+    width: 800px;
+}
+.my_nav ul
+{
+    list-style: none;
+
+}
+.my_nav ul li
+{
+  background: white;
+  width: 170px;
+  border-radius:0px 20px 0px 20px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center; 
+  float: left;
+  color: #fff;
+  font-size: 20px;
+  position: inherit;
+  font-family: arial serif;
+  font-weight: bold;
+  box-shadow:2px 2px 10px #000;
+  transition-duration: 2.0s;
+
+ }
+
+.search-list ul li
+{
+    display: none;
+}
+ul
+{
+    list-style-type: none;
+    
+}
+
+div
+{
+    border-radius:10px;
+    line-height: 50px;
+    background-color: white;
+    width: 170px;
+    position: absolute;
+    right: 221px;
+    top: 90px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 19px;
+}
+div a
+{
+   color:#383e56;
+   text-decoration: none;
+}
+.search:hover >ul
+{
+    display: block;
+    
+}
+
+.my_nav ul li:hover
+{
+  background: #E0E0E0;
+}
+.my_nav ul ul
+{
+  display: none;
+}
+.my_nav ul li:hover >ul
+{
+  display: block;
+}
+.my_nav a
+{
+   color:#383e56;
+   text-decoration: none;
+}
+/*end of the nav*/
+
+/*********************************************************************************************/
+/*start of the articles*/
+.fisrt_article
+{
+  margin: 0px 20px 20px 20px;
+}
+article
+{
+    background : white;
+    border: 1px solid #ccc;
+    margin: 20px ;
+    padding: 20px;
+    width: auto;
+    height: 1050px;
+    box-shadow:5px 5px 10px #000;
+    border-radius:50px 50px 50px 50px;
+    position: relative;
+    top: 165px;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+article h2
+{
+  text-align: center;
+}
+/*end of the articles*/
+/*start of span*/
+section
+{
+    font-weight: bolder;
+}
+section span
+{
+    font-weight: normal;
+    font-size: 22px;
+}
+.cart
+{
+    position: relative;
+    left: 1000px;
+    top: 10px;
+    margin: 10px;
+    border-radius:20px;
+    width:200px;
+    height:30px;
+    
+}
+/*start of the footer*/
+footer
+{
+    height: 50px;
+    padding: 10px;
+    position: relative;
+    top: 120px;
+}
+footer ul
+{
+  list-style: none;
+  float:left;
+}
+footer ul li
+{
+  width:150px;
+  float: left;
+  padding-top: 20px;
+  padding-right:17px;
+  line-height:20px;
+}
+footer a
+{
+  text-decoration: none;
+  color:black;
+  font-size:15px;
+}
+.home_footer
+{
+  margin-left: -90px;
+  font-size:15px;
+}
+footer p
+{
+	line-height:50px;
+    font-size:15px;
+    float: right;
+    padding-right:20px;
+    margin-top: 0px;
+}
+.clear
+{
+ clear: both;
+}
+.first_list
+{
+  margin-right: -80px;
+  margin-left: 0px;
+/*end of the footer*/

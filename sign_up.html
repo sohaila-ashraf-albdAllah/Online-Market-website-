@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet"href="sign_up.css"/>
+		<title>Sign Up Form</title>
+	</head>
+	<body>
+	<center>
+	 <div class="main_div">
+		<form id="signup-form">
+		    <fieldset>
+				<legend>Your data</legend>
+				<label> frist name</label>
+				<input  type="text"id="frist_name"maxlength="12" placeholder="  first name" required><span>*</span><br>
+
+				<label> last name</label>
+				<input  type="text"id="last_name"maxlength="12" placeholder="  last name" required ><span>*</span><br>
+
+				<label> e_mail</label>
+				<input  type="email" id="email"pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}" placeholder="  e-mail" required ><span>*</span><br>
+
+				<label>password</label>
+				<input  type="password"id="password"maxlength="20" placeholder="  password" required><span>*</span><br>
+
+				<label>countiery</label>
+				<input  type="text"id="countiery"maxlength="15" placeholder="  countiery" required><span>*</span><br>
+
+				<label>city</label>
+				<input  type="text"id="city"maxlength="15" placeholder="  city" required><span>*</span><br>
+
+				<label>address</label>
+				<input  type="text"id="address"maxlength="60" placeholder="  address" required><span>*</span><br>
+
+				<label> phone number</label>
+				<input class="input_style" type="tel"id="phone"maxlength="11"pattern="01+[0-9]{9}" placeholder="  phone number" required ><span>*</span><br>
+
+                                  <label>your birthday date</label>
+                                 <input  type="date" id="date" name="date" max="2005-12-31" min="1920-12-31" placeholder="  date" required ><span>*</span><br>
+
+				<label>male</label>
+				<input type="radio"id="male"name="gender" value="0" required><span>*</span><br>
+				<label>female</label>
+				<input type="radio"id="female" name="gender"value="1" required><span>*</span><br>
+
+				<input class="submit" type="submit"id="submet" value="submit" onclick="check_and_save()" >
+			</fieldset>
+		</form>
+	</div>
+</center>
+    <footer>
+	 <hr>
+      <ul>
+        <li class="first_list"><a href="#">About As</a></li>
+        <li><a href="#">Devolpers &amp Editors</a></li>
+        <li><a href="#">Help</a></li>
+        <li class="home_footer"> <a href="C:\Users\Mazin Mohammed\Desktop\Online Market Shop/home2.html">Home</a>
+        </li>
+      </ul>
+      <p>Thank you for vsiting our website</p>
+      <span class="clear"></span>
+    </footer>
+		<script>
+		function check_and_save()
+		{
+		var check =true;
+		var fn=document.getElementById("frist_name").value;
+		var password=document.getElementById("password").value;
+		if(document.getElementById("frist_name").value=="")
+		{
+		check=false;
+		}
+		if(document.getElementById("last_name").value=="")
+		{
+		check=false;
+		}
+		if(document.getElementById("email").value=="")
+		{
+		check=false;
+		}
+		if(document.getElementById("password").value=="")
+		{
+		check=false;
+		}
+		if(document.getElementById("countiery").value=="")
+		{
+		check=false;
+		}
+		if(document.getElementById("city").value=="")
+		{
+		check=false;
+		}
+		if(document.getElementById("address").value=="")
+		{
+		check=false;
+		}
+		if(document.getElementById("phone").value=="")
+		{
+		check=false;
+		}else if(!(document.getElementById("phone").validity.valid))
+		{
+		check=false;
+		}
+		if(document.getElementById("date").value=="")
+		{
+		check=false;
+		}
+		if(!(document.getElementById("date").validity.valid))
+		{
+		check=false;
+		}
+
+        if(!(document.getElementById("email").validity.valid))
+		{
+		 check=false;
+		}
+		if(!(document.getElementById("male").checked||document.getElementById("female").checked))
+		{
+		check=false;
+		}
+		if(check==true)
+		{
+		alert (" hi "+fn+" you meber here now ");
+		window.open("file:///C:/Users/Mostafa/Desktop/b4.html");
+		localStorage.setItem("username",fn);
+		localStorge.setItem("password",password);
+		}
+		}
+		</script>
+	</body>
+</html>

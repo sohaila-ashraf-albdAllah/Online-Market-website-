@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Programmers &amp Editors</title>
+    <link rel="stylesheet" href="programmers and editors.css">
+  </head>
+  <body onload="displaying()">
+    <header>
+        <img src="MATRIALS/MOM2.png" alt="logo" width="50px" height="50px">
+        <center><h1>Masters Online Market</h1></center>
+        <span class="clear"></span>
+    </header>
+    <nav class="my_nav">
+       <ul>
+         <li class="home_footer">
+     <a href="file:///C:/Users/MOSTAFA/Desktop/home2.html">Home</a></li>
+         <li>
+           <a href="file:///C:/Users/MOSTAFA/Desktop/fashion.html">Fashion</a>
+           <ul>
+             <li><a href="file:///C:/Users/MOSTAFA/Desktop/men.html">Men</a></li>
+             <li><a href="file:///C:/Users/MOSTAFA/Desktop/women.html">Women</a></li>
+             <li><a href="file:///C:/Users/MOSTAFA/Desktop/kids.html">Kids</a></li>
+           </ul>
+           </li>
+         <li>
+           <a href="file:///C:/Users/MOSTAFA/Desktop/tech.html">Technology</a>
+           <ul>
+             <li><a href="file:///C:/Users/MOSTAFA/Desktop/laptops.html">Laptops</a></li>
+             <li><a href="file:///C:/Users/MOSTAFA/Desktop/mobile.html">Mobiles</a></li>
+           </ul>
+         </li>
+         <li><a href="file:///C:/Users/MOSTAFA/Desktop/sports.html">Sporting</a></li>
+         <li><a href="file:///C:/Users/MOSTAFA/Desktop/beauty.html">Health &amp Beauty</a></li>
+       </ul>
+    </nav>
+    <body>
+     <div>
+          <center><table class="main" >
+            <tr class="first">
+              <td><span>&#10037; Name</span></td>
+              <td><span>&#10037; E-Mail</span></td>
+              <td><span>&#10037; ID</span></td>
+            </tr>
+            <tr>
+              <td>Aisha Soliman Fath-Allah Khalil</td>
+              <td>Aisha20191700330@cis.asu.edu.eg</td>
+              <td>20191700330</td>
+            </tr>
+            <tr>
+              <td>Sohaila Ashraf Abdullah Alquaidy</td>
+              <td>Sohaila20191700304@cis.asu.edu.eg</td>
+              <td>20191700304</td>
+            </tr>
+            <tr>
+              <td>Mostafa Aman Awad Omar</td>
+              <td>mostafa20191700640@cis.asu.edu.eg</td>
+              <td>20191700640</td>
+            </tr>
+            <tr>
+              <td>Mostafa Ashraf Borhamy Mahmoud</td>
+              <td>Mostafa20191700639@cis.asu.edu.eg</td>
+              <td>20191700639</td>
+            </tr>
+            <tr>
+              <td>Mohamed Ashraf Abd-Elmaqsoud Habib</td>
+              <td>Mohamed20191700509@cis.asu.edu.eg</td>
+              <td>20191700509</td>
+            </tr>
+            <tr>
+              <td>Mazen Mohamed Fawzy Eid</td>
+              <td>Mazen20191700480@cis.asu.edu.eg</td>
+              <td>20191700480</td>
+            </tr>
+          </table>
+		</center>
+     </div>
+     <footer>
+   <hr>
+        <ul>
+          <li class="first_list"><a href="file:///C:/Users/MOSTAFA/Desktop/about.html">About Us</a></li>
+          <li><a href="file:///C:/Users/MOSTAFA/Desktop/programmers%20and%20editors.html">Devolpers &amp Editors</a></li>
+          <li><a href="file:///C:/Users/MOSTAFA/Desktop/help.html">Help</a></li>
+          <li  class="home_footer"><a href="file:///C:/Users/MOSTAFA/Desktop/admin%20(2).html">Admin</li>
+          <li class="home_footer"> <a href="file:///C:/Users/MOSTAFA/Desktop/home2.html">Home</a>
+          </li>
+        </ul>
+        <p>Thank you for vsiting our website</p>
+        <span class="clear"></span>
+      </footer>
+    <script type="text/javascript">
+        function log_in() {
+           window.open("file:///C:/Users/MOSTAFA/Desktop/log_in.html");
+        }
+        function sign_up() {
+           window.open("file:///C:/Users/MOSTAFA/Desktop/sign_up.html");
+        }
+		function myFunction()
+        {
+        var input, filter, ul, li, a, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+        for (var i = 0; i < li.length; i++)
+        {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1)
+        {
+        li[i].style.display = "list-item";
+        }
+
+        else
+        {
+        li[i].style.display = "none";
+        }
+        if(input.value == "")
+        {
+        li[i].style.display="none";
+        }
+        }
+        }
+        function search()
+        {
+        var input, ul, li;
+        input = document.getElementById("myInput");
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+        for (var i = 0; i < li.length; i++)
+        {
+        if(input.value=="")
+        {
+        li[i].style.display = "none";
+        }
+        }
+        }
+        function displaying()
+        {
+        var ul,li;
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+        for (var i = 0; i < li.length; i++)
+        {
+        li[i].style.display = "none";
+        }
+        }
+    </script>
+  </body>
+</html>
